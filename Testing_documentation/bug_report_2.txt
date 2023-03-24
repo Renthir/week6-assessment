@@ -1,0 +1,23 @@
+Bug Report for Test Case 2 - Dueling Wins/Losses
+
+Description:
+This test determines if the scoring system updates correctly when the user wins or loses a duel.
+
+Steps:
+1. Navigate to the website - *website
+2. Click the button labeled "Draw" centered near the middle of the page.
+3. Select any two bots by clicking on the "Add to Duo" button located on the bots' cards
+4. Once two have been selected, the bottom of the page should have a button labeled 'Duel!' Click that button and wait for the page to update.
+5. After a brief 'dueling' message, there should be a message in the middle of the page that alerts the user whether they won or lost.
+
+Expected Result:
+1. If the site shows the user has lost the duel, the Losses counter should increment by 1
+2. If the site shows the user has won the duel, the Wins counter should increment by 1
+
+Actual Result:
+1. Whether the message tells the user they won or lost the duel, the Losses counter increments by 1
+2. When the message tells the user they have won the duel, the Win counter remains at 0
+
+Enviroment:
+Windows 10 Pro  Version 21H2
+Chrome Version 111.0.5563.111 (Official Build) (64-bit)

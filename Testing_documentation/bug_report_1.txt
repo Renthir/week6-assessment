@@ -1,0 +1,23 @@
+Bug Report for Test Case 1 - Getting all bots
+
+Description:
+No list is provided to the user
+
+Steps to Reproduce:
+1. 1. Navigate to the website - *website
+2. Click the button labeled "See All Bots" centered near the top of the page.
+
+Expected Result:
+Some type of list should be shown to the user, whether a text list, or an array of the cards
+
+Actual Result:
+No visual change happens client side. 
+Client console logs a 400 status
+Server Console logs an error
+
+Enviroment:
+Windows 10 Pro  Version 21H2
+Chrome Version 111.0.5563.111 (Official Build) (64-bit)
+
+
+

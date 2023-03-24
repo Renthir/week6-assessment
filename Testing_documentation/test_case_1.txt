@@ -1,0 +1,11 @@
+Test Case 1 - Getting bots list
+
+Description:
+This test verifies that the user can get some form of a list or array of all the bots there are available on the site.
+
+Steps:
+1. Navigate to the website - *website
+2. Click the button labeled "See All Bots" centered near the top of the page.
+
+Test Postconditions:
+Some type of list should be shown to the user, whether a text list, or an array of the cards
