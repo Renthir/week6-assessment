@@ -29,16 +29,25 @@ describe('', () => {
         await driver.sleep(500)
         let displayed = await choices.isDisplayed()
         expect(displayed).toBe(true)
+        await driver.sleep(500)
+
     })
 
     test('Choosing a card shows player duo', async () => {
+        const drawBtn = await driver.findElement(By.id('draw'))
         // const choices = await driver.findElement(By.id('choices'))
-        const botBtn = await driver.findElement(By.xpath(`//div[@id="choices"]/div/button[@class='bot-btn']`))
+        const botBtn = await driver.findElement(By.xpath(`//div[@class='bot-card outline']//button`))
         const playerDuo = await driver.findElement(By.id('player-duo'))
+
+        await drawBtn.click()
+        await driver.sleep(500)
 
         await botBtn.click()
         await driver.sleep(500)
+        
         let displayed = await playerDuo.isDisplayed()
         expect(displayed).toBe(true)
+        await driver.sleep(500)
+
     })
 })
